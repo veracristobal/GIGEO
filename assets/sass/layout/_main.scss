@@ -1,0 +1,45 @@
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    //background-color: thistle;
+    //padding: 3rem 0;
+    //border-top: #e3e6e0 solid 1px;
+
+    .main__title {
+        width: auto;
+        align-self: center;
+        font-size: $x-large;
+        font-weight: $regular;
+        justify-self: center;
+    }
+
+    .main__videos {
+        display: flex;
+        width: 80%;
+        align-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .video__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            margin-top: 2rem;
+        }
+
+        .video__text {
+            font-size: $medium;
+           
+            .span-video{
+                color: #696069;
+                font-size: $small;
+                font-weight: $regular;
+            }
+            
+        }
+    }
+
+}

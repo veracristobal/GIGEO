@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .logo__container {
+  margin-left: 5rem;
+  display: flex;
+  height: 50%;
+}
+.navigation .logo__container .logo_small_text {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.navigation .logo__container .logo_big_text {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.navigation .menu {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+.navigation .menu .menu-item {
+  display: none;
+  text-decoration: none;
+  color: black;
+  display: none;
+}
+.navigation .menu .span {
+  display: block;
+  color: #55595c;
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  background-image: url("C:/Users/cristobal/Desktop/GIGIO/assets/images/image-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__container {
+  width: 85%;
+  height: 20vh;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile__container .header__info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile__container .header__info img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+.profile__container .header__info p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+.profile__container .header__info p span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #8f8999;
+}
+.profile__container .buttons {
+  display: none;
+}
+.profile__container .buttons .mensaje, .profile__container .buttons .seguir {
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0 0.5rem;
+}
+.profile__container .buttons .mensaje {
+  background-color: #92dce5;
+}
+.profile__container .buttons .seguir {
+  background-color: #ef6461;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main .main__title {
+  width: auto;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 400;
+  justify-self: center;
+}
+.main .main__videos {
+  display: flex;
+  width: 80%;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .main__videos .video__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+}
+.main .main__videos .video__text {
+  font-size: 1.3rem;
+}
+.main .main__videos .video__text .span-video {
+  color: #696069;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .navigation {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation .logo__container {
+    margin-left: 5rem;
+    display: flex;
+    height: 50%;
+  }
+  .navigation .logo__container .logo_small_text {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+  .navigation .logo__container .logo_big_text {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .navigation .menu {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5rem;
+  }
+  .navigation .menu .menu-item {
+    display: block;
+    color: black;
+  }
+  .navigation .menu .span {
+    color: #55595c;
+    display: block;
+  }
+
+  .header {
+    width: 100%;
+    height: 30vh;
+    background-image: url("C:/Users/cristobal/Desktop/GIGIO/assets/images/image-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .profile__container {
+    width: 85%;
+    height: 15vh;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile__container .header__info {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile__container .header__info img {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+  }
+  .profile__container .header__info p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+  .profile__container .header__info p span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #8f8999;
+  }
+  .profile__container .buttons {
+    display: block;
+  }
+  .profile__container .buttons .mensaje, .profile__container .buttons .seguir {
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin: 0 0.5rem;
+  }
+  .profile__container .buttons .mensaje {
+    background-color: #92dce5;
+  }
+  .profile__container .buttons .seguir {
+    background-color: #ef6461;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    border-top: #e3e6e0 solid 1px;
+  }
+  .main .main__title {
+    width: 85%;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .main .main__videos {
+    display: flex;
+    width: 85%;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main .main__videos .video__container {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin-top: 2rem;
+  }
+  .main .main__videos .video__text {
+    font-size: 1.3rem;
+  }
+  .main .main__videos .video__text .span-video {
+    color: #696069;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
